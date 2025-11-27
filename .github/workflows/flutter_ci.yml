@@ -40,7 +40,8 @@ jobs:
 
       # 6. EJECUTAR TESTS
       - name: Run tests
-        run: flutter test --coverage --no-pub || true
+        run: flutter test --coverage --no-pub
+        # run: flutter test --coverage --no-pub || true
 
       # 7. GUARDAR REPORTE DE COBERTURA
       - name: Save coverage report
